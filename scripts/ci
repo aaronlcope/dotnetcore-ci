@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ######################################################################################################
 # Builds a DOTNET CLI based CSPROJ and sends successful artifacts (nupkg files) to a NuGet repository. 
