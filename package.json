@@ -1,0 +1,20 @@
+{
+  "name": "dotnetcore-ci",
+  "version": "1.0.0",
+  "description": "A dotnet core ci GitHub action that builds, tests, measures code in sonar cloud, packages and pushes a versioned dotnet core project to it's own GitHub repository's packages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronlcope/dotnetcore-ci.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronlcope/dotnetcore-ci/issues"
+  },
+  "homepage": "https://github.com/aaronlcope/dotnetcore-ci#readme"
+}

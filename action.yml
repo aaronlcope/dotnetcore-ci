@@ -1,0 +1,25 @@
+name: 'dotnet core Continuous Integration'
+description: 'This GitHub action will restore dependencies, build, test, measure code quality in sonarcloud, package and publish to a nuget feed, tied to an organization in GitHub.'
+inputs:
+  skip-unit-tests:
+    description: 'Should the ci build skip unit tests?'
+    required: false
+    default: false
+  skip-sonar-cloud-analysis:
+    description: 'Should the build skip the sonar analysis on sonarcloud?'
+    required: false
+    default: false
+  skip-nuget-packaging:
+    description: 'Should the ci build skip packaging and pushing to GitHub packages in the current repository?'
+    required: false
+    default: false
+  sonar-cloud-auth-token:
+    description: 'Pre-configured token to connect to sonarcloud. This only needs to be set when the skip-sonar-analysis parameter is set to false.'
+    required: false
+    default: ''
+outputs:
+  configuration-settings:
+      description: 'Configuration settings the the user chose.'
+runs:
+  using: 'node13'
+  main: 'index.js'
